@@ -24,4 +24,9 @@ int main(){
     int valor, um, cinco, dez, cinquente, cem;
     printf("Diga o valor sacado (entre 10 a 600)");
     scanf("%i", valor);
+    if(valor < 10 || 600 > valor){
+        printf("Valor invalido");
+    }
+
+    
 }
