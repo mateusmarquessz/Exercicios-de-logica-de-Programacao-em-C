@@ -6,50 +6,47 @@ O programa deve no final emitir uma classificação sobre a participação da pe
 Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
 */
 
-#include <stdio.h>
-#include <ctype.h>
 #include <cmath>
 #include <cstring>
-#include <locale.h>
+#include <ctype.h>
+#include <stdio.h>
+int main()
+{
+    char resposta;
+    int positivos = 0;
 
-int main(){
-    char telefone, local, mora, devia, trabalho;
-    int positivo = 0;
-    printf("Telefonou para a vitima? Responda com s ou n \n");
-    scanf("%c", &telefone);
-        if(telefone == 's' || telefone == 'n'){
-            positivo ++;
-        }
+    printf("Telefonou para a vítima? (S ou N): ");
+    scanf("%c", &resposta);
+    if (resposta == 'S' || resposta == 's')
+        positivos++;
+    printf("Esteve no local do crime? (S ou N): ");
+    getchar();
+    scanf("%c", &resposta);
+    if (resposta == 'S' || resposta == 's')
+        positivos++;
+    printf("Mora perto da vítima? (S ou N): ");
+    getchar();
+    scanf("%c", &resposta);
+    if (resposta == 'S' || resposta == 's')
+        positivos++;
+    printf("Devia para a vítima? (S ou N): ");
+    getchar();
+    scanf("%c", &resposta);
+    if (resposta == 'S' || resposta == 's')
+        positivos++;
+    printf("Já trabalhou com a vítima? (S ou N): ");
+    getchar();
+    scanf("%c", &resposta);
+    if (resposta == 'S' || resposta == 's')
+        positivos++;
 
-    printf("Esteve no local do crime? Responda com s ou n\n");
-    scanf("%c", &local);
-        if(local == 's' || local== 'n'){
-            positivo ++;
-        }
-
-    printf("Mora perto da vitima? Responda com s ou n\n");
-    scanf("%c", &mora);
-        if(mora == 's' || mora == 'n'){
-            positivo ++;
-        }
-
-    printf("Devia para a vitima? Responda com s ou n\n");
-    scanf("%c", &devia);
-        if(devia == 's' || devia == 'n'){
-            positivo ++;
-        }
-
-    printf("Já trabalhou com a vitima? Responda com s ou n\n");
-    scanf("%c", &trabalho);
-        if(trabalho == 's' || trabalho == 'n'){
-            positivo ++;
-        }
-    if(positivo > 2){
+    if (positivos < 2)
+        printf("Inocente");
+    else if (positivos == 2)
         printf("Suspeita");
-    } else if(positivo > 3 || positivo < 5) {
+    else if (positivos < 5)
         printf("Cúmplice");
-    } else{
+    else
         printf("Assassino");
-    }
-
+    return 0;
 }
