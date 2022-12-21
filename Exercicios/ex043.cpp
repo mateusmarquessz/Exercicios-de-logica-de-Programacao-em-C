@@ -23,22 +23,34 @@ int main(){
         printf("Diga a quantidade de litros comprados!");
     scanf("%f", &litros);
 
-       printf("Se for alcool responda A, se for gasolina responda G");
-    scanf("%c", &combustivel);
+       printf("Qual combustivel, A-alcool, G-gasolina");
+    scanf("%s", &combustivel);
     getchar();
 
     if(combustivel == 'A' || combustivel == 'a'){
-            preco = 1.9;
+            preco = litros * 1.9;
     } else if(combustivel == 'G' || combustivel == 'g'){
-            preco = 2.5;
+            preco = litros * 2.5;
         }
-
+ 
 
     if(litros < 20){
          printf("valor a ser pago %f", preco);
     } else if (litros = 20){
-        printf("");
+        preco -= 1.9 * litros * 3 / 100.0;
+        printf("valor a ser pago %f", preco);
     } else {
-        printf("");
+        preco -= 1.9 * litros * 5 / 100.0;
+        printf("valor a ser pago %f", preco);
+    }
+
+     if(litros < 20){
+         printf("valor a ser pago %f", preco);
+    } else if (litros = 20){
+        preco -= 2.5 * litros * 4 / 100.0;
+        printf("valor a ser pago %f", preco);
+    } else {
+        preco -= 2.5 * litros * 6 / 100.0;
+        printf("valor a ser pago %f", preco);
     }
 }
