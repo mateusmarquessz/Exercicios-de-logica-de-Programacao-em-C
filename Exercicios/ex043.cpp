@@ -28,14 +28,13 @@ int main(){
     getchar();
 
     if(combustivel == 'A' || combustivel == 'a'){
-            preco  =  1.9;
+            preco = 1.9;
     } else if(combustivel == 'G' || combustivel == 'g'){
             preco = 2.5;
         }
 
 
-    if(litros <= 20){
-        preco * litros;
+    if(litros < 20){
          printf("valor a ser pago %f", preco);
     } else if (litros = 20){
         printf("");
