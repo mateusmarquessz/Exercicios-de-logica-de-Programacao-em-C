@@ -43,7 +43,6 @@ int main(){
         preco -= 1.9 * litros * 5 / 100.0;
         printf("valor a ser pago %f", preco);
     }
-
      if(litros < 20){
          printf("valor a ser pago %f", preco);
     } else if (litros = 20){
