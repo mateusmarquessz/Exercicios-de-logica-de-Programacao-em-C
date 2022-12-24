@@ -15,11 +15,35 @@ Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade
 #include <stdio.h>
 
 int main(){
-    float morango, macas, valor;
+    float morango, macas, preco, precoD;
         printf("Diga a quantidade em Kg de morangos");
-    scanf("%f", morango);
-        printf("Diga a quantidade em Kg de morangos");
+    scanf("%f", &morango);
+        printf("Diga a quantidade em Kg de maca");
     getchar();
-    scanf("%f", macas);
-    valor = 0;
+    scanf("%f", &macas);
+
+    if(morango <= 5){
+        preco = 2.50;
+        preco = preco * morango;
+        printf("O valor pago nos morangos e: %f\n", preco);
+    } else {
+        preco = 2.20;
+        preco = preco * morango;
+        printf("O valor pago nos morangos e: %f\n", preco);
+    }
+
+    if(macas <= 5){
+        preco = 1.80;
+        preco = preco * macas;
+        printf("O valor pago nas macas e: %f \n", preco);
+    } else {
+        preco = 1.50;
+        preco = preco * macas;
+        printf("O valor pago nas macas e: %f\n", preco);
+    }
+
+    if((morango + macas) > 8 || preco > 25){
+        preco  -= preco * 10 / 100;
+        printf("O valor total a ser pago com Desconto de 10 porcento e: %f", preco);
+    }
 }
