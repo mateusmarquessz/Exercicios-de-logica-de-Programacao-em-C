@@ -22,7 +22,7 @@ int main()
         populacao_B *= 1 + (1.5 / 100);
         if (populacao_A >= populacao_B)
         {
-            printf("Demorou %d anos para a população de A passar ou igualar a "
+            printf("Demorou %d anos para a populacao de A passar ou igualar A "
                    "de B.",
                    anos);
             printf("\nA tem %.0f habitantes e B tem %.0f.", populacao_A,
