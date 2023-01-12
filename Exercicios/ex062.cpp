@@ -7,14 +7,14 @@ Faça um programa que, dado um conjunto de N números, determine o menor valor, 
 #include <stdio.h>
 
 int main(){
-    float n, soma, maior_numero = -INFINITY, nenor_numero = INFINITY, menor, maior;
-    printf("Digite um numero qualquer ou 0 para parar e exibir os resultados:");
-    scanf("%f", &n);
-    soma = 0;
+    int i, n;
+    float vet[1000];
+    printf("Diga a quantidade de numeros que voce vai digitar:");
+    scanf("%i", &n);
 
-    while(n != 0){
-        printf("Digite um numero qualquer ou 0 para parar e exibir os resultados:");
-        scanf("%f", &n);
+    for(i=0; i<n; n++){
+        printf("Diga um numero:");
+        scanf("%f", vet[i]);
     }
-    printf("Menor: %i, Maior: %i, Soma:%i",menor, maior, soma);
+    
 }
