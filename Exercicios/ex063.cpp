@@ -13,10 +13,13 @@ int main(){
     scanf("%i", &n);
     
     for(i=0; i<n; i++){
+      if(n<0 && n>1000){
+        printf("Numero invalido;");
+      } else{
         printf("Diga um numero:");
         scanf("%f", &vet[i]);
-    }
-
+          }
+      }
       maior = vet[0];
     for (i = 1; i < n; i++){
         if(vet[i] > maior){
