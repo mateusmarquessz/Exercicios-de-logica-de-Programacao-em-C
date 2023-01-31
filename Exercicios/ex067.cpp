@@ -9,20 +9,45 @@ Serão avaliados o funcionamento, o estilo e o número de testes (divisões) exe
 #include <cstring>
 #include <ctype.h>
 #include <stdio.h>
+int main()
+{
+    int numero;
+    printf("\nDigite um numero inteiro: ");
+    scanf("%d", &numero);
 
+    if (numero == 1 || numero == 2)
+        printf(
+            "\n%d é primo e foram executadas 0 divisões para descobrir isso",
+            numero);
 
-int main(){
-    int i, n;
-    bool primo;
-    printf("Digite a quantidade de numeros que deseja");
-    scanf("%i", &n);
+    else if (numero % 2 == 0)
+        printf(
+            "\n%d não é primo e foi executada uma divisão para descobrir isso",
+            numero);
 
-    for (i = 0; i < n; i++){
-         if (n % i == 0)
+    else
+    {
+        int contador = 1;
+        bool primo = true;
+        for (int i = 3; i < numero; i += 2)
         {
-            primo = false;
-            printf("\n%d não é primo! É divisível por %d.", n, i);
+            contador++;
+            if (numero % i == 0)
+            {
+                primo = false;
+                break;
+            }
         }
+        if (primo)
+            printf("\n%d é primo e foram executadas %d divisões para "
+                   "descobrir isso",
+                   numero, contador);
+
+        else
+            printf("\n%d não é primo e foram executadas %d divisões para "
+                   "descobrir isso",
+                   numero, contador);
     }
-    
+
+    return 0;
 }
