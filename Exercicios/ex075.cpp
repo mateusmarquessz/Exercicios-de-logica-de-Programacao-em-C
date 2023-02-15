@@ -11,10 +11,36 @@ O programa deve então mostrar o total da compra e perguntar o valor em dinheiro
 
 Após esta operação, o programa deverá voltar ao ponto inicial, para registrar a próxima compra.
 
-A saída deve ser conforme o exemplo abaixo: Lojas Tabajara Produto 1: R$ 2.20 Produto 2: R$ 5.80 Produto 3: R$ 0 Total: R$ 9.00 Dinheiro: R$ 20.00 Troco: R$ 11.00
+A saída deve ser conforme o exemplo abaixo: 
+Lojas Tabajara Produto 1: R$ 2.20 
+Produto 2: R$ 5.80 Produto 3: R$ 0 Total: R$ 9.00 Dinheiro: R$ 20.00 Troco: R$ 11.00
 */
 #include <cmath>
 #include <cstring>
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
+
+
+int main()
+{
+    printf("\nLojas Tabajara\n");
+    float total = 0, dinheiro, valor = 0;
+    int produto = 0;
+
+    while (true)
+    {
+        produto++;
+        printf("Produto %d: R$ ", produto);
+        scanf("%f", &valor);
+        if (valor == 0)
+            break;
+        total += valor;
+    }
+
+    printf("Total: R$ %.2f", total);
+    printf("\nDinheiro: R$ ");
+    scanf("%f", &dinheiro);
+    printf("Troco: %.2f", dinheiro - total);
+    return 0;
+}
