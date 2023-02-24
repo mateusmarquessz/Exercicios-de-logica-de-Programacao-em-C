@@ -10,3 +10,7 @@ Ao encerrar o programa também deve ser informados os códigos e valores do clen
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
+
+int main(){
+    printf("Digite ")
+}
