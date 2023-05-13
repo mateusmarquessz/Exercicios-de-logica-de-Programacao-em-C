@@ -15,8 +15,5 @@ inicial do funcionário.
 #include <stdio.h>
 
 int main(){
-    int i;
-    for(i=1996;i<2023; i++){
-        
-    }
+    d
 }
