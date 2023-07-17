@@ -15,5 +15,5 @@ inicial do funcionário.
 #include <stdio.h>
 
 int main(){
-    d
+    
 }
