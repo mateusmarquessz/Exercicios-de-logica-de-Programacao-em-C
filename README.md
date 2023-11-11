@@ -29,39 +29,40 @@ informado foi [número].
 
 Faça um Programa que peça dois números e imprima a soma.
 
-#### [Exercicio 004](exercicios/004.cpp)
+#### [Exercicio 004](Exercicios/ex004.cpp)
 
 Faça um Programa que peça as 4 notas bimestrais e mostre a média.
 
-#### [Exercicio 005](exercicios/005.cpp)
+#### [Exercicio 005](Exercicios/ex005.cpp)
 
 Faça um Programa que converta metros para centímetros.
 
-#### [Exercicio 006](exercicios/006.cpp)
+#### [Exercicio 006](Exercicios/ex006.cpp)
 
 Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
 
-#### [Exercicio 007](exercicios/007.cpp)
+#### [Exercicio 007](Exercicios/ex007.cpp)
 
 Faça um Programa que calcule a área de um quadrado, em seguida mostre o dobro
 desta área para o usuário.
 
-#### [Exercicio 008](exercicios/008.cpp)
+#### [Exercicio 008](Exercicios/ex008.cpp)
 
 Faça um Programa que pergunte quanto você ganha por hora e o número de horas
 trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.
 
-#### [Exercicio 009](exercicios/009.cpp)
+#### [Exercicio 009](Exercicios/ex009.cpp)
 
 Faça um Programa que peça a temperatura em graus Farenheit, transforme e mostre
 a temperatura em graus Celsius.
 C = (5 * (F-32) / 9).
 
-#### [Exercicio 010](exercicios/010.cpp)
+#### [Exercicio 010](Exercicios/ex010.cpp)
 
 Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre
 em graus Farenheit.
 
+#### Daqui eu parei a continuacao de clicar e ir para a resolucao
 #### [Exercicio 011](exercicios/011.cpp)
 
 Faça um Programa que peça 2 números inteiros e um número real.
